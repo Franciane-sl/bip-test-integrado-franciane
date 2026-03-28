@@ -1,5 +1,6 @@
 package com.example.ejb;
 
+import com.example.domain.Beneficio;
 import jakarta.ejb.Stateless;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
@@ -15,7 +16,6 @@ public class BeneficioEjbService {
         Beneficio from = em.find(Beneficio.class, fromId);
         Beneficio to   = em.find(Beneficio.class, toId);
 
-        // BUG: sem validações, sem locking, pode gerar saldo negativo e lost update
         from.setValor(from.getValor().subtract(amount));
         to.setValor(to.getValor().add(amount));
 
