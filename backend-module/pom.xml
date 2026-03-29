@@ -24,7 +24,13 @@
            <groupId>com.example</groupId>
            <artifactId>domain-module</artifactId>
            <version>0.0.1-SNAPSHOT</version>
-    </dependency>
+        </dependency>
+
+        <dependency>
+           <groupId>com.example</groupId>
+           <artifactId>ejb-module</artifactId>
+          <version>0.0.1-SNAPSHOT</version>
+        </dependency>
     
         <!-- Web API -->
         <dependency>
@@ -57,6 +63,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-validation</artifactId>
         </dependency>
+
+        <dependency>
+           <groupId>org.springdoc</groupId>
+           <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+           <version>2.1.0</version>
+         </dependency>
 
         <!-- Testes -->
         <dependency>
