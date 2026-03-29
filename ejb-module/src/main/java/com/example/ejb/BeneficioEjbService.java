@@ -7,7 +7,7 @@ import jakarta.persistence.PersistenceContext;
 
 import java.math.BigDecimal;
 
-import com.example.domain.model.Beneficio;
+import com.example.domain.model.entity.Beneficio;
 
 @Stateless
 public class BeneficioEjbService {
