@@ -276,6 +276,12 @@ Os testes da aplicação foram realizados utilizando o Postman, validando manual
 
 Não foram implementados testes automatizados (JUnit), porém a aplicação foi validada manualmente garantindo o correto funcionamento das regras de negócio e endpoints.
 
+Além disso, a documentação da API foi integrada com Swagger, permitindo visualizar e testar todos os endpoints de forma interativa:
+
+[http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
+
+Todos os endpoints testados no Swagger retornam **200 OK**.
+
 ---
 
 ## Critérios Atendidos
