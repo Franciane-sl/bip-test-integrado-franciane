@@ -24,7 +24,13 @@
            <groupId>com.example</groupId>
            <artifactId>domain-module</artifactId>
            <version>0.0.1-SNAPSHOT</version>
-    </dependency>
+        </dependency>
+
+        <dependency>
+           <groupId>com.example</groupId>
+           <artifactId>ejb-module</artifactId>
+          <version>0.0.1-SNAPSHOT</version>
+        </dependency>
     
         <!-- Web API -->
         <dependency>
