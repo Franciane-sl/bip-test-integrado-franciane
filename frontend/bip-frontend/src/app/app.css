@@ -1,0 +1,22 @@
+/* Estilo global do projeto */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #2c3e50;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
