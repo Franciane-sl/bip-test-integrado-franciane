@@ -1,0 +1,29 @@
+<h2>Criar Benefício</h2>
+
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <label>
+    Nome:
+    <input formControlName="nome" />
+  </label>
+  <br/>
+
+  <label>
+    Descrição:
+    <input formControlName="descricao" />
+  </label>
+  <br/>
+
+  <label>
+    Valor:
+    <input type="number" formControlName="valor" />
+  </label>
+  <br/>
+
+  <label>
+    Ativo:
+    <input type="checkbox" formControlName="ativo" />
+  </label>
+  <br/>
+
+  <button type="submit" [disabled]="form.invalid">Salvar</button>
+</form>
