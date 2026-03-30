@@ -1,0 +1,23 @@
+<h2>Transferência entre Benefícios</h2>
+
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <label>
+    De (ID do benefício):
+    <input type="number" formControlName="fromId" />
+  </label>
+  <br/>
+
+  <label>
+    Para (ID do benefício):
+    <input type="number" formControlName="toId" />
+  </label>
+  <br/>
+
+  <label>
+    Valor:
+    <input type="number" formControlName="amount" />
+  </label>
+  <br/>
+
+  <button type="submit" [disabled]="form.invalid">Transferir</button>
+</form>
